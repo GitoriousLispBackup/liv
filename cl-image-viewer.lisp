@@ -1,6 +1,20 @@
-;; name: liv - leth image viewer
-;; use skippy for gif?
-;; use cl-devil for everything?
+;; liv - leth image viewer (simple image viewer written in common lisp)
+;; © Copyright 2014 Viktor "leth" Lindberg <leth@fripost.org>
+;;
+;; This program is free software: you can redistribute it and/or modify
+;; it under the terms of the GNU General Public License as published by
+;; the Free Software Foundation, either version 3 of the License, or
+;; (at your option) any later version.
+;;
+;; This program is distributed in the hope that it will be useful,
+;; but WITHOUT ANY WARRANTY; without even the implied warranty of
+;; MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+;; GNU General Public License for more details.
+;;
+;; You should have received a copy of the GNU General Public License
+;; along with this program.  If not, see <http://www.gnu.org/licenses/>.
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
 
 (ql:quickload "cl-devil") ;; this need ilut, arch package is without.
 (ql:quickload "lispbuilder-sdl")
@@ -225,5 +239,4 @@
 	 ))))
   (il:delete-images *image* *display-image*))
 
-  
 (start-displayer)
